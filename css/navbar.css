@@ -1,0 +1,21 @@
+/*body {
+  padding-top: 60px;  60px to make the container go all the way to the bottom of the topbar
+}*/
+img.navbar-logo {
+  margin-top: 0px;
+  height: 50px;
+  width: 50px;
+}
+.navbar-fixed-top {
+    background-image: url(../images/layout/banner.jpg);
+  width: 100%;
+  background-size: cover;
+}
+.brand {
+}
+
+.contact {
+  position: fixed;
+  top:20px ;
+  right:20px;
+}
