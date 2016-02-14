@@ -2,20 +2,27 @@
   padding-top: 60px;  60px to make the container go all the way to the bottom of the topbar
 }*/
 img.navbar-logo {
-  margin-top: 0px;
+  position: fixed;
+  top: 30px;
+  left:10px ;
   height: 50px;
   width: 50px;
 }
+.top-nav-collapse{
+  min-height: 80px;
+  display: inline-block;
+}
 .navbar-fixed-top {
-    background-image: url(../images/layout/banner.jpg);
+  background-image: url(../images/layout/banner.jpg);
   width: 100%;
   background-size: cover;
 }
-.brand {
+.brand-name {
+  height: 50px;
+  width:100%;
 }
-
-.contact {
+/*.contact {
   position: fixed;
   top:20px ;
   right:20px;
-}
+}*/
