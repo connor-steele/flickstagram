@@ -18,6 +18,8 @@
     <link href="css/navbar.css" rel="stylesheet">
     <!-- Pretty Photo Specific CSS -->
     <link href="css/photogallery.css" rel="stylesheet">
+    <!-- about section css -->
+    <link href="css/about.css" rel="stylesheet">
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -43,11 +45,6 @@
                   <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="#contact">Contact</a>
-                </li>
               </ul>
             </div>
         </div>
@@ -56,19 +53,36 @@
       <section id="intro" class="intro-section">
        <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <h1>Scrolling Nav</h1>
-              <p><strong>Usage</strong></p>
-              <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-              <h2>Gallery 2</h2>
+            <div class"col-md-4">
               <ul class="gallery clearfix">
-                <li><a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery2]" title="How is the description on that one? How is the description on that one? How is the description on that one? "><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="This is a pretty long title" /></a></li>
-                <li><a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="" /></a></li>
-                <li><a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="" /></a></li>
-                <li><a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="" /></a></li>
-                <li><a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="" /></a></li>
+              <span id="gallery1">
+              <a href="images/starwars/main-theme.jpg" rel="prettyPhoto[gallery2]" class="fullscreen"><img src="images/starwars/main-theme.jpg" width="600" height="300" />
+              </a></span>
+                  <li><a href="images/starwars/spaceship.jpg" rel="prettyPhoto[gallery2]" title="Millennium Falcon"></a></li>
+                  <li><a href="images/starwars/startroopers.jpg" rel="prettyPhoto[gallery2]" title="StarTroopers"></a></li>
+                  <li><a href="images/starwars/startroopers2.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."></a></li>
+                  <li><a href="images/starwars/startroopers3.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."></a></li>
+                  <li><a href="images/starwars/villian.jpg" rel="prettyPhoto[gallery2]"></a></li>
+                  <li><a href="images/starwars/dark-boba.jpg" rel="prettyPhoto[gallery2]"></a></li>
               </ul>
-          </div>
+              </div>
+            </div>
+        </div>
+        <div class"col-md-4">
+              <ul class="gallery clearfix">
+              <span id="gallery2">
+              <a href="images/starwars/main-theme.jpg" rel="prettyPhoto[gallery2]" class="fullscreen"><img src="images/starwars/main-theme.jpg" width="600" height="300" />
+              </a></span>
+              <h1>click on image for a slideshow</h1>
+                  <li><a href="images/starwars/spaceship.jpg" rel="prettyPhoto[gallery2]" title="Millennium Falcon"></a></li>
+                  <li><a href="images/starwars/startroopers.jpg" rel="prettyPhoto[gallery2]" title="StarTroopers"></a></li>
+                  <li><a href="images/starwars/startroopers2.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."></a></li>
+                  <li><a href="images/starwars/startroopers3.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."></a></li>
+                  <li><a href="images/starwars/villian.jpg" rel="prettyPhoto[gallery2]"></a></li>
+                  <li><a href="images/starwars/dark-boba.jpg" rel="prettyPhoto[gallery2]"></a></li>
+              </ul>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -77,25 +91,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <nav class="navbar navbar-inverse navbar">
+                    <h1 id="about-header">About Section</h1>
+                    </nav>
+                    <div id="hover">
+              <img src="images/star-wars-the-force-awakens.png" width="550" height="300" /></div>
+                    <h3>This is a simple 1 page photo gallery app built by Connor Steele to showcase front end skills.</h3>
                 </div>
             </div>
         </div>
@@ -108,18 +109,17 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- Scrolling Nav JavaScript -->
   <script src="js/scrolling-nav.js"></script>
+    <!-- main application -->
+  <script src="js/application.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function(){
       $("area[rel^='prettyPhoto']").prettyPhoto();
-
       $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
       $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-
       $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
         custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
         changepicturecallback: function(){ initialize(); }
       });
-
       $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
         custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
         changepicturecallback: function(){ _bsap.exec(); }
