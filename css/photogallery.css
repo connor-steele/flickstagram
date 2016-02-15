@@ -1,0 +1,21 @@
+ul li {
+ display: inline;
+}
+
+.wide {
+  border-bottom: 1px #000 solid;
+  width: 4000px;
+}
+.fleft {
+ float: left;
+  margin: 0 20px 0 0;
+}
+.cboth {
+ clear: both;
+}
+#main {
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  width: 1000px;
+}
