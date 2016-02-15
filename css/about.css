@@ -1,6 +1,14 @@
 #about-header {
   color: white;
 }
-#about {
+/*#about {
   background-image: url("http://images4.alphacoders.com/803/80316.jpg");
+}*/
+#about-navbar {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+.about-section{
+    background-image: url("http://images4.alphacoders.com/803/80316.jpg");
 }

@@ -194,7 +194,6 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
   opacity: .75;
   transition: all .25s linear;
 }
-
 #gallery2 {
   position: relative;
   top: -300px;
