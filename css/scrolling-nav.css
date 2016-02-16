@@ -37,6 +37,7 @@ of those sections to manage the look and feel of the site. */
     position: relative;
    overflow: hidden;
    background-color: black;
+   color: white;
 }
 img.background-moose {
    position: fixed;
