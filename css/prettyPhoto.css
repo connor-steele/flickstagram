@@ -187,14 +187,9 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 
 #gallery1 {
   position: relative;
-  top: 200px;
+  top: 150px;
 }
-
-/*.intro-section: {
-  background-image: url("../images/nature/moose.jpg");
-  background-size: cover;
-   background-color:rgba(0,0,0,0.5);
-}*/
-/*div ul:not(:first-child) {
-    background-color: #900;
-}*/
+#slide-show-intro {
+  position: relative;
+  top: 125px;
+}
