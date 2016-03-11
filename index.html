@@ -22,6 +22,7 @@
     <link href="css/about.css" rel="stylesheet">
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+          <img class="background-moose" src="./images/nature/moose.jpg">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -44,21 +45,43 @@
                 <li>
                   <a class="page-scroll" href="#about" id="about-navbar">About</a>
                 </li>
-                <li>
+                 <li>
+                  <a class="page-scroll" href="#transition" id="transition-navbar">Transistions</a>
+                </li>
               </ul>
             </div>
         </div>
     </nav>
       <!-- Intro Section -->
       <section id="intro" class="intro-section">
-       <div class="container">
           <div class="row">
-            <div class"col-md-4">
-            <img class="background-moose" src="./images/nature/moose.jpg">
+            <div class="col-md-6" id="box">
+              <div class="jumbotron">
+                <div class="validate">
+                  <form id="theForm">
+                    <h3><strong>Form Validations</strong></h3>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter name..."><br>
+
+                    <label for="email">E-Mail: </label>
+                    <input type="text" name="email" id="email" placeholder="Enter e-mail..."><br>
+
+                    <label for="phone">Phone: </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter phone..."><br>
+
+                    <label for="state">State/Province: </label>
+                    <input type="text" name="state" id="state" placeholder="Enter state or province..."><br>
+                    <input type="hidden" name="country" value="Norway">
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class"col-md-6">
               <ul class="gallery clearfix">
-              <h1 id="slide-show-intro">Click on IMAGE to start the slideshow!</h1>
+              <h3 id="slide-show-intro">Click on IMAGE to start the slideshow!</h3>
               <span id="gallery1">
-              <a href="images/starwars/startroopers.jpg" rel="prettyPhoto[gallery2]" class="fullscreen" title="StarTroopers"><img src="images/starwars/startroopers.jpg" width="700" height="400" />
+              <a href="images/starwars/startroopers.jpg" rel="prettyPhoto[gallery2]" class="fullscreen" title="StarTroopers"><img src="images/starwars/startroopers.jpg" width="500" height="275" />
               </a></span>
                   <li><a href="images/nature/bird.jpg" rel="prettyPhoto[gallery2]" title="Blue-Bird"></a></li>
                   <li><a href="images/nature/tornado2.jpg" rel="prettyPhoto[gallery2]" title="Tornado"></a></li>
@@ -70,23 +93,74 @@
               </div>
             </div>
         </div>
-      </div>
     </section>
+      <section id="transition" class="transistions-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-inverse navbar" id="transistion-header">
+                <h1>transistions</h1>
+              </nav>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3" id="box">
+              <div class="jumbotron">
+                <ul class="gallery clearfix">
+                  <span id="gallery2">
+                      <li> <a href="https://www.youtube.com/watch?v=3P-AdwZMXiM" rel="prettyPhoto" title=""><img src="images/nature/field.jpg" alt="YouTube" width="100px" height="100px" /></a></li>
+                      <li><h5>click on the image to view a youtube video</h5></li>
+                  </span>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3" id="box">
+              <div class="jumbotron">
+                  <button class="mybtn">Type in your name to get a randomized message</button>
+              </div>
+            </div>
+            <div class="col-md-3" id="box">
+              <div class="jumbotron">
+              <button type="button" class="btn btn-info longestWord">Type Words to Find the Longest</button>
+              </div>
+            </div>
+            <div class="col-md-3" id="box">
+              <div class="jumbotron">
+                <div class="question">
+                  <div id="green-square"></div>
+                  <h6>Click this box to make it transform blue, and move down, then transform back</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          </div>
+        </div>
+      </section>
     <!-- Intro Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-inverse navbar">
-                    <h1 id="about-header">About Section</h1>
+                      <h1 id="about-header">About Section</h1>
                     </nav>
-                    <div id="hover">
-              <img src="images/star-wars-the-force-awakens.png" width="550" height="300" /></div>
                     <h3>This is a simple 1 page photo gallery app built by Connor Steele to showcase front end skills.</h3>
+                       <div class="col-md-3">
+                <ul class="gallery clearfix">
+                  <span id="gmaps">
+                      <li> <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">                  embed google map              </a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.2827291,-123.12073750000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.2827291,-123.12073750000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Connor Steele Enterprises</strong><br>vancouver, canada<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></li>
+<!--                       <li><h5>click on the image to go to google maps</h5></li> -->
+                  </span>
+                </ul>
+              </div>
                 </div>
+              </div>
             </div>
         </div>
     </section>
+
   </body>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -109,7 +183,7 @@
       $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
         custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
         changepicturecallback: function(){ _bsap.exec(); }
-      });
+      })
     });
   </script>
 </html>

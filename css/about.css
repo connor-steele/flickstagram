@@ -4,15 +4,122 @@
   right: 30px;
   color: white;
 }
+.jumbotron {
+  background-color: rgba(0,0,0,0.5);
+  text-align: left;
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  font-size: 30px;
+  font-size: 3.5vw;
+}
+#green-square {
+  height: 150px;
+  width: 150px;
+  background: green;
+}
+#green-square {
+  height: 150px;
+  width: 150px;
+  background: green;
+  transition: all 1s linear;
+}
+#green-square.active {
+  margin-top: 100px;
+  background: blue;
+  transition: all 1s linear;
+}
+
+#green-square.deactive {
+  height: 50px;
+  width: 50px;
+  margin-top: 0px;
+  border-radius: 50%;
+  background: green;
+  transition: all 1s linear;
+}
+label {
+  display: inline-block;
+  width: 130px;
+}
+input[type="text"] {
+  width: 350px;
+  height: 30px;
+  line-height: 27px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 0 5px;
+  margin: 5px 0;
+}
+#theForm{
+  display: inline-block;
+  max-height: 300px;
+  padding-left: 70px;
+}
+input[type="submit"] {
+  background-color: #08c;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+}
+.infoErr {
+  background-color: red;
+}
+
+#transition-navbar {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  color: white;
+}
+#transistion-header{
+  position: relative;
+  top: 100px;
+}
+.mybtn {
+  color:black;
+}
+#box {
+  position: relative;
+  top: 120px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 100%;
+  max-height: 100%;
+ /* -webkit-overflow-scrolling: auto; /* stop scrolling immediately */*/
+  display: inline-block;
+/*  overflow: auto;*/
+}
+section{
+background-color: rgba(0,0,0,0.5);
+ }
+#gmaps {
+  position: relative;
+  top: 70px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 100%;
+  max-height: 100%;
+  right: 0px;
+}
 #about {
-  background-color: black;
+/*  background-color: black;*/
+}
+.longestWord {
+  position: relative;
+  right: 30px;
+  max-width: 250px;
+  max-height: 200px;
 }
 #hover {
-    display: none;
-    position: relative;
-    top: -500px;
-    right: -400px;
-    transition: all .25s linear;
+  display: none;
+  position: relative;
+  top: -500px;
+  right: -400px;
+  transition: all .25s linear;
 }
 .fullscreen:hover {
   opacity: .75;
@@ -20,10 +127,14 @@
 }
 
 #gallery1 {
-  position: absolute;
-  top: 150px;
+  position: relative;
+    max-width: 100%;
+  max-height: 100%;
+  padding-top: 100px;
+  /*  top: px;
   right: 0px;
-  left: 0px;
+  left: 0px;*/
+  display: inline-block;
 }
 #slide-show-intro {
   position: relative;

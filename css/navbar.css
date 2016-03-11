@@ -1,12 +1,17 @@
-/*body {
-  padding-top: 60px;  60px to make the container go all the way to the bottom of the topbar
-}*/
+body {
+      max-width: 100%;
+  max-height: 100%;
+}
 img.navbar-logo {
   position: fixed;
   top: 30px;
   left:10px ;
   height: 50px;
   width: 50px;
+  min-height: 20px;
+  min-width: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .top-nav-collapse{
   min-height: 80px;
@@ -20,6 +25,10 @@ img.navbar-logo {
 .brand-name {
   height: 50px;
   width:100%;
+  min-height: 20px;
+}
+.transistions-section{
+/*background-color: rgba(0,0,0,0.5);*/
 }
 /*.contact {
   position: fixed;
