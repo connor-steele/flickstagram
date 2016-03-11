@@ -13,12 +13,12 @@
         });
     alert("The longest word is " + word + "!");
     });
-        $('#green-square').on('click', function () {
-      $(this).addClass('active');
-      setTimeout(function() {
-        $('#green-square').removeClass('active');
-      }, 2000);
-    })
+      $("#blue-box").on("click", function() {
+        $("#blue-box").addClass("greenify");
+        setTimeout(function() {
+          $("#blue-box").removeClass("greenify");
+        }, 5000)
+      })
           $(function() {
     /**** YOU MAY MODIFY THE CODE BELOW ****/
 

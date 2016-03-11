@@ -5,8 +5,8 @@
   color: white;
 }
 .jumbotron {
-  background-color: rgba(0,0,0,0.5);
-  text-align: left;
+  background-color: rgba(0,0,0,0.2);
+/*  text-align: left;*/
   max-width: 100%;
   max-height: 100%;
 }
@@ -14,30 +14,19 @@ p {
   font-size: 30px;
   font-size: 3.5vw;
 }
-#green-square {
-  height: 150px;
-  width: 150px;
-  background: green;
-}
-#green-square {
-  height: 150px;
-  width: 150px;
-  background: green;
-  transition: all 1s linear;
-}
-#green-square.active {
-  margin-top: 100px;
+#blue-box {
+  height: 100px;
+  width: 100px;
   background: blue;
   transition: all 1s linear;
+  position: relative;
 }
-
-#green-square.deactive {
-  height: 50px;
-  width: 50px;
-  margin-top: 0px;
+#blue-box.greenify {
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  background: green;
-  transition: all 1s linear;
+  background-color: green;
+  position: relative;
 }
 label {
   display: inline-block;
@@ -51,11 +40,14 @@ input[type="text"] {
   border-radius: 8px;
   padding: 0 5px;
   margin: 5px 0;
+  color: black;
 }
 #theForm{
   display: inline-block;
-  max-height: 300px;
+  max-width: 100%;
+  max-height: 100%;
   padding-left: 70px;
+  text-align: left;
 }
 input[type="submit"] {
   background-color: #08c;
@@ -75,9 +67,11 @@ input[type="submit"] {
   right: 100px;
   color: white;
 }
-#transistion-header{
+.transistion-header{
   position: relative;
-  top: 100px;
+/*  display: inline-block;*/
+/*  top: 500px;*/
+top: 100px;
 }
 .mybtn {
   color:black;
@@ -94,25 +88,30 @@ input[type="submit"] {
 /*  overflow: auto;*/
 }
 section{
-background-color: rgba(0,0,0,0.5);
+ padding-bottom: 100px;
  }
 #gmaps {
   position: relative;
-  top: 70px;
+  right: -500px;
+  bottom: 100px;
+/*  top: 70px;
   min-width: 30px;
-  min-height: 30px;
+  min-height: 30px;*/
+  align-self: center;
   max-width: 100%;
   max-height: 100%;
-  right: 0px;
+  color: black;
 }
 #about {
 /*  background-color: black;*/
+  max-width: 100%;
+  max-height: 100%;
 }
 .longestWord {
   position: relative;
-  right: 30px;
-  max-width: 250px;
-  max-height: 200px;
+/*  right: 30px;*/
+  max-width: 100%;
+  max-height: 100%;
 }
 #hover {
   display: none;
@@ -125,10 +124,9 @@ background-color: rgba(0,0,0,0.5);
   opacity: .75;
   transition: all .25s linear;
 }
-
 #gallery1 {
   position: relative;
-    max-width: 100%;
+  max-width: 100%;
   max-height: 100%;
   padding-top: 100px;
   /*  top: px;
@@ -136,6 +134,9 @@ background-color: rgba(0,0,0,0.5);
   left: 0px;*/
   display: inline-block;
 }
+/*ul.gallery.clearfix{
+ background-color: rgba(0,0,0,0.5);
+}*/
 #slide-show-intro {
   position: relative;
   top: 140px;

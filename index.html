@@ -22,21 +22,20 @@
     <link href="css/about.css" rel="stylesheet">
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-          <img class="background-moose" src="./images/nature/moose.jpg">
+    <img class="background-moose" src="./images/nature/moose.jpg">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                <img class="brand-name" src="images/layout/brand-name.png"></a>
-                <img class="navbar-logo" src="images/layout/logo.png"></a>
-                </a>
-            </div>
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+              <img class="navbar-logo" src="images/layout/logo.png"></a>
+              <img class="brand-name" src="images/layout/brand-name.png" href="#page-top"></a>
+
+              </a>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
                 <li class="hidden">
@@ -46,7 +45,7 @@
                   <a class="page-scroll" href="#about" id="about-navbar">About</a>
                 </li>
                  <li>
-                  <a class="page-scroll" href="#transition" id="transition-navbar">Transistions</a>
+                  <a class="page-scroll" href="#transition" id="transition-navbar">Features</a>
                 </li>
               </ul>
             </div>
@@ -56,7 +55,7 @@
       <section id="intro" class="intro-section">
           <div class="row">
             <div class="col-md-6" id="box">
-              <div class="jumbotron">
+              <div class="well">
                 <div class="validate">
                   <form id="theForm">
                     <h3><strong>Form Validations</strong></h3>
@@ -92,75 +91,64 @@
               </ul>
               </div>
             </div>
-        </div>
     </section>
-      <section id="transition" class="transistions-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-inverse navbar" id="transistion-header">
-                <h1>transistions</h1>
-              </nav>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3" id="box">
-              <div class="jumbotron">
-                <ul class="gallery clearfix">
-                  <span id="gallery2">
-                      <li> <a href="https://www.youtube.com/watch?v=3P-AdwZMXiM" rel="prettyPhoto" title=""><img src="images/nature/field.jpg" alt="YouTube" width="100px" height="100px" /></a></li>
-                      <li><h5>click on the image to view a youtube video</h5></li>
-                  </span>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3" id="box">
-              <div class="jumbotron">
-                  <button class="mybtn">Type in your name to get a randomized message</button>
-              </div>
-            </div>
-            <div class="col-md-3" id="box">
-              <div class="jumbotron">
-              <button type="button" class="btn btn-info longestWord">Type Words to Find the Longest</button>
-              </div>
-            </div>
-            <div class="col-md-3" id="box">
-              <div class="jumbotron">
-                <div class="question">
-                  <div id="green-square"></div>
-                  <h6>Click this box to make it transform blue, and move down, then transform back</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
+    <section id="transition" class="transistions-section">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-inverse navbar" id="transition-header">
+              <h1>Features</h1>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" id="box">
+          <div class="well">
+            <ul class="gallery clearfix">
+              <span id="gallery2">
+                <li> <a href="https://www.youtube.com/watch?v=3P-AdwZMXiM" rel="prettyPhoto" title=""><img src="images/nature/field.jpg" alt="YouTube" width="200px" height="200px" /></a></li>
+                <li><h5>Click Above to Watch a Youtube Nature Documentery</h5></li>
+              </span>
+            </ul>
           </div>
         </div>
-      </section>
-    <!-- Intro Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-inverse navbar">
-                      <h1 id="about-header">About Section</h1>
-                    </nav>
-                    <h3>This is a simple 1 page photo gallery app built by Connor Steele to showcase front end skills.</h3>
-                       <div class="col-md-3">
-                <ul class="gallery clearfix">
-                  <span id="gmaps">
-                      <li> <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">                  embed google map              </a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.2827291,-123.12073750000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.2827291,-123.12073750000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Connor Steele Enterprises</strong><br>vancouver, canada<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></li>
-<!--                       <li><h5>click on the image to go to google maps</h5></li> -->
-                  </span>
-                </ul>
-              </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-md-8" id="box">
+          <div class="well">
+            <h2>Click on the blue-box to transform it into a green circle</h2>
+            <div id="blue-box"></div>
+            <button type="button" class="btn btn-info longestWord">Find the Longest Word</button></br>
+            <button class="mybtn">Type in your name to recieve a randomized greeting!</button>
+          </div>
         </div>
+      </div>
     </section>
-
+  <section id="about" class="about-section">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-inverse navbar">
+          <h1 id="about-header">About Section</h1>
+        </nav>
+        <h3>This is a simple 1 page photo gallery app built by Connor Steele to showcase front end skills.</h3>
+         <div class="col-md-12" id="box">
+          <ul class="gallery clearfix">
+            <span id="gmaps">
+              <li>
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div style='overflow:hidden;height:400px;width:500px;'>
+                <div id='gmap_canvas' style='height:400px;width:500px;'></div>
+                <div>
+                  <small>
+                    <a href="http://freedirectorysubmissionsites.com/">free web directories</a>
+                  </small>
+                </div>
+                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+              </div>
+              <script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.2827291,-123.12073750000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.2827291,-123.12073750000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Connor Steele Enterprises</strong><br>vancouver, canada<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            </li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </section>
   </body>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
